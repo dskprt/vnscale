@@ -40,7 +40,7 @@ namespace vnscale {
             if(comboBox1.SelectedItem != null) {
                 capture = new VideoCapture(camIndex: comboBox1.SelectedIndex);
 
-                PlaybackForm playback = new PlaybackForm(capture);
+                PlaybackForm playback = new PlaybackForm(capture, (int)numericUpDown1.Value, (int)numericUpDown2.Value, (int)numericUpDown4.Value, (int)numericUpDown3.Value);
                 playback.Show();
 
                 Hide();
